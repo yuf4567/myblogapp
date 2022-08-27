@@ -1,0 +1,28 @@
+.App{
+    width: 1177px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    box-shadow: -1px 0px 4px rgba(0,0,0,0.3);
+}
+#taxian{
+    height: 46px;
+    width: 100%;
+}
+.content{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+.toTop{
+    border-radius: 20px 0 0 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: fixed;
+    right: 0;
+    top: 200px;
+    cursor: pointer;
+}
+

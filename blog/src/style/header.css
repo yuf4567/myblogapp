@@ -1,0 +1,179 @@
+.header{
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    background-color: #f9f9f9;
+    height: 46px;
+    line-height: 46px;
+    width: 1177px;
+    margin: 0 auto;
+    box-shadow: -1px 0px 4px rgba(0,0,0,0.14);
+}
+.header .logo{
+    width: 250px;
+    padding-left: 30px;
+    color: #777777;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: antiquewhite; */
+}
+.header .logo span{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.header .icon{
+    width: 56px;
+    color: #777777;
+    /* background-color: aqua; */
+    text-align: center;
+    cursor: pointer;
+}
+.header .icon:hover{
+    background-color: #ececec;
+}
+.header .search{
+    position: relative;
+    width: 759px;
+    /* background-color: aliceblue; */
+    padding-left: 20px;
+}
+.header .search input{
+    border: 0;
+    height: 28px;
+    border-radius: 14px 0 0 14px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 10px;
+}
+.header .search input:hover{
+    background-color: #e0e6ed;
+}
+.header .search input:focus{
+    outline:#cbddfa solid 2px;
+}
+.header .search span{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    width: 28px;
+    top: 9px;
+    background-color: white;
+    border-radius: 0 14px 14px 0;
+    cursor: pointer;
+}
+.icon1Block {
+    display: none;
+    position: fixed;
+    height: 539px;
+    right: 52px;
+    top: 46px;
+    z-index: 1;
+  }
+.new{
+    position: fixed;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    line-height: 17px;
+    height: 17px;
+    width: 20px;
+    border-radius: 9px;
+    background-color: red;
+    top: 5px;
+    right: 111px;
+    z-index: 1;
+}
+.gossipflex{
+    display: none;
+}
+.gossip{
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    background-color: #edf1f2;
+    width: 320px;
+    top: 46px;
+    right: 103px;
+    z-index: 1;
+    box-shadow: -3px 0px 4px rgba(0,0,0,0.14);
+    animation:move 1.5s 1;
+}
+@keyframes move{
+    to{    
+        top: 46px;
+        right: 103px;
+    }
+    from{
+        right: 103px;
+        top: 400px;
+    }
+}
+.gossip .gossipContent{
+    color: #868686;
+    background-color: white;
+    line-height: 150%;
+    width: 320px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 1px;
+}
+.gossip .gossipDate{
+    color: #98a6ad;
+    font-size: 5px;
+    background-color: white;
+}
+.gossipTitle{
+    color: #58666e;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.login{
+    display: none;
+    padding: 10px;
+    width: 277px;
+    position: fixed;
+    background-color: #f9f9f9;
+    z-index: 1;
+    top: 46px;
+    right: 49px;
+    box-shadow: -3px 0px 4px rgba(0,0,0,0.14);
+    animation:fadenum 2s 1;
+}
+@keyframes fadenum{
+   0%{opacity: 0;}
+   100%{opacity: 1;}
+}
+.login div{
+    height: 25px;
+    line-height: 25px;
+    color: #868686;
+    font-size: 14px;
+}
+.login input{
+    border: #f9f9f9 1px solid;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+}
+.login input:focus{
+    outline: #ccdefb 3px solid;
+}
+.login input::placeholder{
+    padding-left:10px;
+    color: #999999;
+    font-size: 14px;
+}
+.login .submit{
+    background-color: #68b3fe;
+    border-radius: 20px;
+    color: white;
+}

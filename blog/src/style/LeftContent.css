@@ -1,0 +1,130 @@
+.LeftContent::-webkit-scrollbar {
+    display: none;
+}
+.LeftContent{
+    position: fixed;
+    width: 215px;
+    height: 94%;
+    overflow: auto;
+}
+.LeftContent .pic{
+    display: flex;
+    align-items: center;
+    height: 115px;
+    color: #777777;
+    font-weight: 700;
+    font-size: 14px;
+    /* background-color: aqua; */
+    border-bottom: white solid 2px;
+}
+.LeftContent .pic img{
+    margin-left: 33px;
+    width: 56px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.LeftContent .pic span{
+    margin-left:10px;
+    cursor: pointer;
+}
+
+#daohang{
+    font-size: 12px;
+    color: #98a6ad;
+    padding: 10px;
+}
+.LeftContent .nav ul li{
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #838383;
+    cursor: pointer;
+}
+.LeftContent .nav ul li:hover{
+    background-color: #ececec;
+}
+.LeftContent .nav ul li span{
+    padding: 20px;
+}
+
+.LeftContent .part{
+    /* background-color: yellowgreen; */
+    border-top: white solid 2px;
+
+}
+.LeftContent .part i{
+    margin-left:90px;
+}
+.LeftContent .fenlei{
+    display: none;
+}
+.LeftContent .fenlei ul li{
+    background-color: white;
+    padding-left:55px;
+}
+.LeftContent .fenlei ul li .dot{
+    background-color: #cfdadd;
+    height: 15px;
+    line-height: 15px;
+    padding: 0;
+    width: 17px;
+    border-radius: 7px;
+    margin-right: 20px;
+    margin-top: 13px;
+    text-align: center;
+}
+@keyframes fadenum{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+ }
+ @keyframes movetriangle{
+    to{    
+        top: 132px;
+        left: 144px;
+    }
+    from{
+        top: 132px;
+        left: 344px;
+    }
+}
+@keyframes moveclickLogo{
+    to{    
+        top: 150px;
+        left: 56px;
+    }
+    from{
+        top: 150px;
+        left: 256px;
+    }
+}
+.triangle{
+    display: none;
+    position: fixed;
+    width:0px;
+    height:0px;
+    border-width:9px;
+    border-style:solid;
+    border-color:transparent transparent #23b7e5 transparent;
+    top: 132px;
+    left: 144px;
+    animation:movetriangle 1.5s 1;
+
+}
+.clickLogo{
+    display: none;
+    position: fixed;
+    width: 198px;
+    height: 82px;
+    padding: 15px;
+    background-color: #23b7e5;
+    color: #dcf2f8;
+    top: 150px;
+    left: 56px;
+    font-size: 14px;
+    animation:moveclickLogo 1.5s 1;
+}
+meter{
+    width: 170px;
+}
+

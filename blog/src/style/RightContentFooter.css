@@ -1,0 +1,19 @@
+.RightContentFooter{
+    background-color: #edf1f2;
+    margin-left: 215px;
+    width: 962px;
+    height: 45px;
+    line-height: 45px;
+}
+.RightContentFooter span{
+    color: #586698;
+    font-size: 12px;
+}
+.left{
+    float: left;
+    margin-left: 10px;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
