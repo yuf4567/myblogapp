@@ -48,7 +48,7 @@ export default function RightContentRight() {
     //从后端获取数据
     () => {
       //获取article
-      axios.get('/article')
+      axios.get('/homeapi/article')
         .then(function (response) {
           setArticles(response.data)
           // console.log(parseInt(articles.length / 10) + 1);
@@ -63,7 +63,7 @@ export default function RightContentRight() {
         })
 
       //获取comment
-      axios.get('/comment')
+      axios.get('/homeapi/comment')
         .then(function (response) {
           setComments(response.data)
           // console.log(parseInt(articles.length / 10) + 1);
@@ -78,7 +78,7 @@ export default function RightContentRight() {
         })
 
       //获取tag
-      axios.get('/tag')
+      axios.get('/homeapi/tag')
         .then(function (response) {
           setTags(response.data)
           // console.log(parseInt(articles.length / 10) + 1);

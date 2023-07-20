@@ -44,7 +44,7 @@ export default function Detailed() {
   useEffect(
     //从后端获取数据
     () => {
-      axios.get('/article')
+      axios.get('/homeapi/article')
         .then(function (response) {
           setArticles(response.data)
           setisLoaded(true)

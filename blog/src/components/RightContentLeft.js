@@ -73,7 +73,7 @@ export default function RightContentLeft() {
   useEffect(
     //从后端获取数据
     () => {
-      axios.get('/article')
+      axios.get('/homeapi/article')
         .then(function (response) {
           setArticles(response.data)
           // console.log(parseInt(articles.length / 10) + 1);

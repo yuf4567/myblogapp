@@ -44,7 +44,7 @@ export default function Header() {
     // alert(JSON.stringify(d))
     // setName(d.username)
     // setPassword(d.password)
-    axios.post('/login', {
+    axios.post('/homeapi/login', {
       name: d.username,
       password: d.password
     })
