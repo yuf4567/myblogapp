@@ -1,0 +1,17 @@
+/* 1 */
+{
+    "_id" : ObjectId("623d5ae747ee5ad083f81c6f"),
+    "name" : "life"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("623d5ae747ee5ad083f81c70"),
+    "name" : "skill"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("623d5ae747ee5ad083f81c71"),
+    "name" : "image"
+}
